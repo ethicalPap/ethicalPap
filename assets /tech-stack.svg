@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 250" width="840" height="250" role="img" aria-label="Tech stack: Python, Go, ReactJS, JavaScript">
+  <defs>
+    <linearGradient id="tbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b14"/><stop offset="1" stop-color="#0c0a1e"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bus" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5E2099" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#66C8C9"/>
+      <stop offset="1" stop-color="#5E2099" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="g1" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid2" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0 L0 0 0 30" fill="none" stroke="#23304a" stroke-width="0.5" stroke-opacity="0.4"/>
+    </pattern>
+    <clipPath id="fr2"><rect width="840" height="250" rx="14"/></clipPath>
+    <style>
+      .mono{font-family:'JetBrains Mono','Fira Code','Courier New',monospace;}
+      @keyframes fill{0%{width:0}60%,100%{width:var(--w)}}
+      @keyframes shimmer{0%{transform:translateX(-60px)}100%{transform:translateX(200px)}}
+      @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+      @keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+      @keyframes brd{0%,100%{opacity:0.45}50%{opacity:1}}
+      @keyframes flow{0%{offset-distance:0%}100%{offset-distance:100%}}
+      @keyframes blink2{0%,49%{opacity:1}50%,100%{opacity:0.15}}
+      .card{animation:float 5s ease-in-out infinite}
+      .c2{animation-delay:.6s}.c3{animation-delay:1.2s}.c4{animation-delay:1.8s}
+      .border{animation:brd 2.6s ease-in-out infinite}
+      .atom{animation:spin 6s linear infinite;transform-origin:center}
+      .sweep{animation:shimmer 3.2s ease-in-out infinite}
+      .blip{animation:blink2 1.4s step-end infinite}
+      .barP{--w:88px;animation:fill 2.4s ease-out forwards}
+      .barG{--w:80px;animation:fill 2.6s ease-out forwards}
+      .barR{--w:84px;animation:fill 2.8s ease-out forwards}
+      .barJ{--w:86px;animation:fill 3.0s ease-out forwards}
+    </style>
+  </defs>
+
+  <g clip-path="url(#fr2)">
+    <rect width="840" height="250" fill="url(#tbg)"/>
+    <rect width="840" height="250" fill="url(#grid2)"/>
+
+    <!-- section header -->
+    <g class="mono">
+      <text x="34" y="40" fill="#66C8C9" font-size="15" font-weight="700" letter-spacing="2">&#60;/&#62; TECH_STACK</text>
+      <text x="34" y="58" fill="#5b7691" font-size="11" letter-spacing="2">// compiled &amp; battle-tested</text>
+      <circle cx="806" cy="34" r="4" fill="#3fdc7a" class="blip"/>
+      <text x="724" y="38" fill="#5b7691" font-size="11" class="mono">RUNNING</text>
+    </g>
+
+    <!-- bottom data bus -->
+    <rect x="32" y="214" width="776" height="2" fill="url(#bus)"/>
+    <circle r="3" fill="#66C8C9" style="offset-path:path('M32 215 H808');animation:flow 3.5s linear infinite"/>
+    <circle r="3" fill="#B79BE0" style="offset-path:path('M32 215 H808');animation:flow 3.5s linear infinite;animation-delay:1.7s"/>
+
+    <!-- ============ PYTHON ============ -->
+    <g class="card" transform="translate(32,78)">
+      <rect width="174" height="120" rx="12" fill="#0d1426" stroke="#3776AB" stroke-width="1.6"/>
+      <rect class="border" width="174" height="120" rx="12" fill="none" stroke="#5ea0e0" stroke-width="1.6"/>
+      <g clip-path="inset(0 round 12)"><rect class="sweep" x="-60" y="0" width="46" height="120" fill="url(#shine)" transform="skewX(-18)"/></g>
+      <!-- python glyph -->
+      <g transform="translate(63,16) scale(1.0)">
+        <path d="M24 0 C14 0 11 4 11 10 v6 h13 v3 H6 C1 19 -2 23 -2 33 s3 14 8 14 h5 v-8 c0-6 4-10 10-10 h12 c5 0 9-4 9-9 V10 C42 4 39 0 30 0 Z M14 6 a2.4 2.4 0 1 1 0 4.8 a2.4 2.4 0 0 1 0-4.8 Z" fill="#3776AB"/>
+        <path d="M24 60 c10 0 13-4 13-10 v-6 H24 v-3 h18 c5 0 8-4 8-14 s-3-14-8-14 h-5 v8 c0 6-4 10-10 10 H15 c-5 0-9 4-9 9 v15 c0 6 3 10 12 10 Z M34 54 a2.4 2.4 0 1 1 0-4.8 a2.4 2.4 0 0 1 0 4.8 Z" fill="#FFD43B"/>
+      </g>
+      <text x="87" y="92" text-anchor="middle" class="mono" font-size="17" font-weight="700" fill="#F7F7FF" filter="url(#g1)">Python</text>
+      <rect x="43" y="102" width="88" height="6" rx="3" fill="#1a2740"/>
+      <rect x="43" y="102" height="6" rx="3" fill="#3776AB" class="barP"/>
+    </g>
+
+    <!-- ============ GO ============ -->
+    <g class="card c2" transform="translate(228,78)">
+      <rect width="174" height="120" rx="12" fill="#0d1426" stroke="#00ADD8" stroke-width="1.6"/>
+      <rect class="border" width="174" height="120" rx="12" fill="none" stroke="#4fd8f5" stroke-width="1.6"/>
+      <g clip-path="inset(0 round 12)"><rect class="sweep" x="-60" y="0" width="46" height="120" fill="url(#shine)" transform="skewX(-18)"/></g>
+      <g transform="translate(87,40)">
+        <text text-anchor="middle" class="mono" font-size="34" font-weight="800" fill="#00ADD8" filter="url(#g1)">Go</text>
+        <g stroke="#00ADD8" stroke-width="3" stroke-linecap="round" opacity="0.8">
+          <line x1="-44" y1="-8" x2="-30" y2="-8"/><line x1="-46" y1="0" x2="-30" y2="0"/><line x1="-44" y1="8" x2="-30" y2="8"/>
+        </g>
+      </g>
+      <text x="87" y="92" text-anchor="middle" class="mono" font-size="17" font-weight="700" fill="#F7F7FF" filter="url(#g1)">Go</text>
+      <rect x="43" y="102" width="88" height="6" rx="3" fill="#1a2740"/>
+      <rect x="43" y="102" height="6" rx="3" fill="#00ADD8" class="barG"/>
+    </g>
+
+    <!-- ============ REACT ============ -->
+    <g class="card c3" transform="translate(424,78)">
+      <rect width="174" height="120" rx="12" fill="#0d1426" stroke="#61DAFB" stroke-width="1.6"/>
+      <rect class="border" width="174" height="120" rx="12" fill="none" stroke="#9be9ff" stroke-width="1.6"/>
+      <g clip-path="inset(0 round 12)"><rect class="sweep" x="-60" y="0" width="46" height="120" fill="url(#shine)" transform="skewX(-18)"/></g>
+      <g transform="translate(87,38)">
+        <g class="atom" fill="none" stroke="#61DAFB" stroke-width="2" filter="url(#g1)">
+          <ellipse rx="20" ry="7.6"/>
+          <ellipse rx="20" ry="7.6" transform="rotate(60)"/>
+          <ellipse rx="20" ry="7.6" transform="rotate(120)"/>
+        </g>
+        <circle r="4" fill="#61DAFB" filter="url(#g1)"/>
+      </g>
+      <text x="87" y="92" text-anchor="middle" class="mono" font-size="17" font-weight="700" fill="#F7F7FF" filter="url(#g1)">ReactJS</text>
+      <rect x="43" y="102" width="88" height="6" rx="3" fill="#1a2740"/>
+      <rect x="43" y="102" height="6" rx="3" fill="#61DAFB" class="barR"/>
+    </g>
+
+    <!-- ============ JAVASCRIPT ============ -->
+    <g class="card c4" transform="translate(620,78)">
+      <rect width="174" height="120" rx="12" fill="#0d1426" stroke="#F7DF1E" stroke-width="1.6"/>
+      <rect class="border" width="174" height="120" rx="12" fill="none" stroke="#fff06b" stroke-width="1.6"/>
+      <g clip-path="inset(0 round 12)"><rect class="sweep" x="-60" y="0" width="46" height="120" fill="url(#shine)" transform="skewX(-18)"/></g>
+      <g transform="translate(67,18)">
+        <rect width="40" height="40" rx="7" fill="#F7DF1E"/>
+        <text x="34" y="32" text-anchor="end" class="mono" font-size="20" font-weight="800" fill="#0d1426">JS</text>
+      </g>
+      <text x="87" y="92" text-anchor="middle" class="mono" font-size="17" font-weight="700" fill="#F7F7FF" filter="url(#g1)">JavaScript</text>
+      <rect x="43" y="102" width="88" height="6" rx="3" fill="#1a2740"/>
+      <rect x="43" y="102" height="6" rx="3" fill="#F7DF1E" class="barJ"/>
+    </g>
+
+    <rect x="1" y="1" width="838" height="248" rx="13" fill="none" stroke="#1f3550" stroke-width="1.4" opacity="0.7"/>
+  </g>
+</svg>
