@@ -1,3 +1,11 @@
+<!--
+  ============================================================
+   ethicalpap — GitHub Profile README
+   SETUP: place header.svg & tech-stack.svg in /assets of your
+   profile repo (username/username). Replace USERNAME if needed.
+  ============================================================
+-->
+
 <div align="center">
 
 <!-- ░░ ANIMATED HEADER ░░ -->
@@ -54,7 +62,7 @@
 <!-- ░░ GITHUB STATS ░░ -->
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=ethicalpap&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&title_color=66C8C9&icon_color=B79BE0&text_color=c9d1d9&bg_color=0d1117" alt="stats" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=ethicalpap&show_icons=true&hide_border=true&title_color=66C8C9&icon_color=B79BE0&text_color=c9d1d9&bg_color=0d1117" alt="stats" />
 &nbsp;
 <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ethicalpap&layout=compact&hide_border=true&langs_count=8&title_color=66C8C9&text_color=c9d1d9&bg_color=0d1117" alt="top langs" />
 
