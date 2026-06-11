@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 230" width="840" height="230" role="img" aria-label="ethicalpap - Cybersecurity Researcher">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b14"/>
+      <stop offset="0.55" stop-color="#0a1426"/>
+      <stop offset="1" stop-color="#0d0820"/>
+    </linearGradient>
+    <linearGradient id="tagline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#66C8C9"/>
+      <stop offset="0.5" stop-color="#B79BE0"/>
+      <stop offset="1" stop-color="#DB9523"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#359F9C" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#66C8C9" stop-opacity="1"/>
+      <stop offset="1" stop-color="#5E2099" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.4" r="0.75">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bigglow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0 L0 0 0 34" fill="none" stroke="#1b6f6c" stroke-width="0.6" stroke-opacity="0.35"/>
+    </pattern>
+    <clipPath id="frame"><rect x="0" y="0" width="840" height="230" rx="14"/></clipPath>
+    <style>
+      .mono{font-family:'JetBrains Mono','Fira Code','Courier New',monospace;}
+      @keyframes scan{0%{transform:translateY(-30px)}100%{transform:translateY(260px)}}
+      @keyframes drift{0%{transform:translateY(0)}100%{transform:translateY(-34px)}}
+      @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+      @keyframes flick{0%,93%,100%{opacity:0}94%{opacity:0.9}95%{opacity:0.2}96%{opacity:0.8}97%{opacity:0}}
+      @keyframes gA{0%,90%,100%{transform:translate(0,0)}91%{transform:translate(-3px,1px)}93%{transform:translate(2px,-1px)}95%{transform:translate(-2px,0)}}
+      @keyframes gB{0%,90%,100%{transform:translate(0,0)}91%{transform:translate(3px,-1px)}93%{transform:translate(-2px,1px)}95%{transform:translate(2px,0)}}
+      @keyframes pulse{0%,100%{opacity:0.35}50%{opacity:1}}
+      @keyframes typ{0%{width:0}100%{width:330px}}
+      .scanline{animation:scan 4.5s linear infinite}
+      .grid{animation:drift 3s linear infinite}
+      .cursor{animation:blink 1s step-end infinite}
+      .glitchA{animation:gA 5s ease-in-out infinite}
+      .glitchB{animation:gB 5s ease-in-out infinite}
+      .flick{animation:flick 7s linear infinite}
+      .node{animation:pulse 2.4s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="840" height="230" fill="url(#bg)"/>
+
+    <!-- moving grid -->
+    <g class="grid"><rect x="-40" y="-40" width="920" height="320" fill="url(#grid)"/></g>
+
+    <!-- faint circuit traces -->
+    <g stroke="#359F9C" stroke-width="1" fill="none" opacity="0.30">
+      <path d="M0 196 H120 L150 166 H320"/>
+      <path d="M840 40 H700 L672 70 H520"/>
+      <path d="M0 60 H70 L92 38 H210"/>
+    </g>
+    <g fill="#66C8C9" class="node">
+      <circle cx="320" cy="166" r="2.6"/><circle cx="520" cy="70" r="2.6"/><circle cx="210" cy="38" r="2.6"/>
+    </g>
+
+    <!-- glitch title -->
+    <g class="mono" font-weight="700" font-size="62" letter-spacing="2">
+      <text x="56" y="118" fill="#ff3df5" opacity="0.85" class="glitchB" filter="url(#glow)">ethicalpap</text>
+      <text x="56" y="118" fill="#22e0ff" opacity="0.85" class="glitchA" filter="url(#glow)">ethicalpap</text>
+      <text x="56" y="118" fill="#F7F7FF" filter="url(#bigglow)">ethicalpap</text>
+    </g>
+
+    <!-- prompt + tagline -->
+    <g class="mono" font-size="19">
+      <text x="58" y="158" fill="#359F9C">&#187;</text>
+      <text x="80" y="158" fill="url(#tagline)" font-weight="600">Just your average Cybersecurity Researcher</text>
+      <rect x="556" y="144" width="11" height="18" fill="#66C8C9" class="cursor"/>
+    </g>
+
+    <!-- animated underline -->
+    <rect x="56" y="176" width="500" height="2" fill="url(#rule)"/>
+
+    <!-- HUD meta line -->
+    <g class="mono" font-size="12.5" fill="#7fb5b3" letter-spacing="1">
+      <text x="58" y="206">[ SEC_RESEARCH ]</text>
+      <text x="232" y="206" fill="#B79BE0">[ OFFENSIVE_SECURITY ]</text>
+      <text x="440" y="206" fill="#DB9523">[ STATUS: ONLINE ]</text>
+      <circle cx="430" cy="202" r="3.4" fill="#3fdc7a" class="node"/>
+    </g>
+
+    <!-- corner HUD brackets -->
+    <g stroke="#66C8C9" stroke-width="2" fill="none" opacity="0.9">
+      <path d="M16 16 H46 M16 16 V46"/>
+      <path d="M824 16 H794 M824 16 V46"/>
+      <path d="M16 214 H46 M16 214 V184"/>
+      <path d="M824 214 H794 M824 214 V184"/>
+    </g>
+
+    <!-- scanline sweep -->
+    <g class="scanline"><rect x="0" y="0" width="840" height="22" fill="#66C8C9" opacity="0.06"/></g>
+    <rect width="840" height="230" fill="url(#vig)"/>
+    <rect width="840" height="230" fill="#22e0ff" opacity="0" class="flick"/>
+    <rect x="1" y="1" width="838" height="228" rx="13" fill="none" stroke="#1f7b78" stroke-width="1.4" opacity="0.6"/>
+  </g>
+</svg>
